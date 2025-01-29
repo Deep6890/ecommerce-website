@@ -8,7 +8,9 @@ html,
 body {
     margin: 0px;
     padding: 0px;
+    width: 100vw;
     background-color: black;
+    overflow-x: hidden;
     color: white;
 }
 
@@ -18,15 +20,20 @@ img {
 
 /*=========================================This Css For Header  &  Footer========================================*/
 
-header,
-footer {
+header {
     display: flex;
     flex-direction: row;
     position: fixed;
-    width: 100vw;
-    color: black;
+    width: 100%;
+    color: #0b0b0b;
     z-index: 1;
     justify-content: center;
+}
+
+header:hover {
+    background-color: #f0f3f43a;
+    color: black;
+    opacity: 0.9;
 }
 
 a {
@@ -66,6 +73,12 @@ video::-webkit-media-controls-overlay-enclosure {
     display: none !important;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*=============!!!!!!!!!!!!!!!!!!!!!!!!!!!!Default Body Css Ends Here!!!!!!!!!!!!!!!!!!!!!!!!!!=================*/
 
 .container {
@@ -73,6 +86,7 @@ video::-webkit-media-controls-overlay-enclosure {
     width: 100%;
     /*This Must Be Defult Column*/
     flex-direction: column;
+    justify-content: center;
 }
 
 .row {
@@ -135,48 +149,57 @@ video::-webkit-media-controls-overlay-enclosure {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container_image {
-    display: flex;
-    width: 100vw;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    justify-content: center;
-    background: rgb(239, 172, 250);
-    background: linear-gradient(90deg, rgba(239, 172, 250, 1) 0%, rgba(250, 110, 103, 1) 50%, rgba(243, 148, 183, 1) 100%);
-}
-
-.image_back_ground_index {
-    width: 80vw;
-    height: 800px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 5px solid rgb(253, 162, 162);
-    box-shadow: 5px 15px 15px 5px rgba(253, 175, 218, 0.703);
-}
-
-.container_img_ch1 {
-    display: flex;
-    position: relative;
-    z-index: 0;
-}
-
-.container_img_ch1_text {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    align-items: center;
-    margin-top: 250px;
-    margin-left: 90px;
+    background: #F0F3F4;
+    height: 900px;
     color: black;
 }
 
-.index_introduction_content_header {
-    color: rgb(0, 0, 0);
-    font-size: 70px;
+.container_1_main_child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1920px;
+    padding: 50px;
+}
+
+.container_1_main_child_text_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    Font-size: 55px;
     font-family: Ink Free;
+    font-weight: 600;
+    width: 50%;
+}
+
+.container_1_main_child_blog_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.container_1_main_child_blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: #0b0b0b 1px solid;
+    border-radius: 25px;
+    max-width: 500px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e7f5f9;
+    box-shadow: 0px 0px 20px 0px #0b0b0b;
+}
+
+.container_1_main_child_blog img {
+    width: 100%;
+    border-radius: 20px;
 }
 
 /***************************************Main Container_2 css starts**************************************************/
@@ -186,20 +209,132 @@ video::-webkit-media-controls-overlay-enclosure {
     align-items: center;
     height: 900px;
     width: 100%;
+    max-width: 1920px;
+    position: relative;
+    z-index: 0;
 }
-.container_2_index_over_img_layar{
+
+.container_2_chatbox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.container_2_index_over_img_layar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 0;
+}
+
+.container_2_chatbox_check_text_1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    right: 350px;
+    z-index: 1;
+}
+
+.container_2_chatbox_check_text_2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 150px;
+    right: 400px;
+    z-index: 1;
+}
+
+.container_2_chatbox_check_text_3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    z-index: 1;
+}
+
+.container_2_chatbox_check_text_4 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
+    position: absolute;
+    bottom: 100px;
+    left: 400px;
+    z-index: 1;
 }
+
+.container_2_chatbox_check_text_5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 400px;
+    left: 398px;
+    z-index: 1;
+}
+
+.container_2_chatbox_check_text_6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    bottom: 350px;
+    right: 500px;
+    z-index: 1;
+}
+
 .container_2_header_1 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px;
     font-size: 15px;
+}
+
+.container_2_chatbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.chatbox_index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7f5f9;
+    color: #0b0b0b;
+    border-radius: 45px;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    margin: 0px 10px 10px 10px;
+}
+
+.chatbox_index_img {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+    max-width: 100px;
 }
 
 .container_2_header_2 {
@@ -211,17 +346,71 @@ video::-webkit-media-controls-overlay-enclosure {
     margin-bottom: 100px;
 }
 
+/**/
+.owl_index_slider {
+    background-color: #2b2b2b;
+}
+
+.owl-theme {
+    background-color: #2b2b2b;
+    color: wheat;
+    width: 100%;
+}
+
+.owl-carousel {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.owl_index_slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.owl_index_container_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.owl_index_container {
+    display: flex;
+    justify-content: center;
+    background-color: #ecf9eb;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.owl_index_container_img img {
+    border-radius: 15px;
+}
+.owl_index_container:hover{
+    background-color: #f0f3f43a;
+    color: black;
+    opacity: 0.8;
+}
+
 /***************************************Main Container_3 Css Starts**************************************************/
 .container_3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(151, 91, 192);
-    background: linear-gradient(90deg, rgba(151, 91, 192, 1) 0%, rgba(255, 87, 87, 1) 50%, rgba(255, 191, 101, 1) 100%);
+    background-color: #F0F3F4;
     height: 900px;
-    color: #FFFFE0;
-    font-size: 2vw;
+    color: #0b0b0b;
+    font-size: 45px;
     width: 100%;
+    max-width: 1920px;
 }
 
 /***************************************Main Container_3 Css Starts**************************************************/
@@ -231,6 +420,7 @@ video::-webkit-media-controls-overlay-enclosure {
     align-items: center;
     width: 100%;
     height: 900px;
+    max-width: 1920px;
 }
 
 .index_aiunify_info {
@@ -268,9 +458,10 @@ video::-webkit-media-controls-overlay-enclosure {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: #FFDAB9;
+    background: #F0F3F4;
     color: #0b0b0b;
     height: 900px;
+    max-width: 1920px;
 }
 
 .index_need_aiunify {
