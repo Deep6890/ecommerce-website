@@ -577,7 +577,7 @@ section {
 .main_img_index_light_text_logo {
     display: flex;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 45px;
     width: 100px;
 }
 
