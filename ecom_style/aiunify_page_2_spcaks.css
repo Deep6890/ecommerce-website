@@ -9,9 +9,9 @@ body {
     margin: 0px;
     padding: 0px;
     width: 100vw;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     overflow-x: hidden;
-    color: white;
+    color: rgb(230, 230, 230);
 }
 
 img {
@@ -28,11 +28,21 @@ header {
     color: white;
     z-index: 1;
     justify-content: center;
+    background: #52AAFF;
+    background: linear-gradient(to right, #52AAFF 0%, #E64EAF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
 }
 
 header:hover {
     background-color: #f0f3f43a;
-    color: black;
+    background: #CFE7FA;
+    background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     opacity: 0.9;
 }
 
@@ -80,6 +90,12 @@ section {
     align-items: center;
 }
 
+iframe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
 /*=============!!!!!!!!!!!!!!!!!!!!!!!!!!!!Default Body Css Ends Here!!!!!!!!!!!!!!!!!!!!!!!!!!=================*/
 /*Page Vise Csss*/
 .container {
@@ -98,10 +114,56 @@ section {
     flex-direction: row;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
 .justify_content_center {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1920px;
+}
+
+.item {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.owl_item {
+    height: 900px;
+}
+
+.owl-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-color: #999b9c;
+    color: black;
+}
+
+.slink_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    color: black;
+
+}
+
+.main_owl_container_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
     max-width: 1920px;
 }
 
@@ -146,10 +208,179 @@ section {
 }
 
 /***************************************Main Container_1 Css Starts**************************************************/
+.container_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 900px;
+    background-color: black;
+    background: #52AAFF;
+    background: linear-gradient(to right, #52AAFF 0%, #E64EAF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 50px 0px;
+}
 
-/*Footer Css*/
+.container_1_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px;
+    width: 100%;
+
+}
+.container_1_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 38px;
+    width: 100%;
+    animation: container_1_header_key 5s;
+}
+@keyframes container_1_header_key {
+    0% {
+        font-size: 35px;
+    }
+
+    100% {
+        font-size: 38px;
+    }
+}
+.container_1_video_slider {
+    margin-top: 100px;
+}
+
+.main_owl_cont_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 0px;
+    color: rgb(44, 42, 42);
+}
+
+.main_owl_cont_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.main_owl_cont_video video {
+    width: 100%;
+    border: 5px solid black;
+    box-shadow: 0px 0px 20px 0px black;
+    border-radius: 25px;
+}
+
+.main_owl_container_video {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+/*****************************************************************Container_2 cSS sTART**********************************************************/
+.container_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.yt_logo {
+    color: rgb(229, 9, 20);
+    fill: red;
+    display: block;
+}
+
+.line_sportify {
+    display: none;
+    position: absolute;
+    top: 700px;
+    margin-bottom: 500px;
+    background: #0D8415;
+    background: linear-gradient(to left, #0D8415 0%, #39B50B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0px 0px 5px 0px  #0D8415;
+}
+.line_sportify p{
+    margin:0px;
+    line-height: 5px;
+}
+/*****************************************************************Container-3********************************************************************/
+.container_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.cont_3_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+/*****************************************************************Container -4 *****************************************************************/
+.container_4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/****************************************************************container_5********************************************************************/
+.container_5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.cont_5_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(180, 176, 176);
+    color: black;
+}
+
+/**************************************************************container-6**********************************************************************/
+.container_6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont_6_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+/******************************************************************Footer Css*******************************************************************/
 .footer_text {
     font-size: 15px;
     word-spacing: 5px;
-    line-height: 50px;
 }
