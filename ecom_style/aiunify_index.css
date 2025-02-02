@@ -25,17 +25,35 @@ header {
     flex-direction: row;
     position: fixed;
     width: 100%;
-    color: #0b0b0b;
+    background: #548F42;
+    background: linear-gradient(to right, #548F42 0%, #A9BB72 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
     z-index: 1;
     justify-content: center;
 }
 
 header:hover {
     background-color: #f0f3f43a;
-    color: black;
+    background: #8b8e9042;
+    background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     opacity: 0.9;
 }
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #83ab85;
+    width: 100%;
+    min-height: 100px;
+    font-size: 20px;
+    font-family: Bahnschrift Light;
+}
 /*==========================================Additional css on tags***************************************************/
 a {
     color: inherit;
@@ -126,10 +144,18 @@ section {
     padding: 0px;
 }
 
+.header_nav_left {
+
+    font-size: 30px;
+    font-family: Bahnschrift Light;
+}
+
 .header_nav_right {
     display: flex;
     width: 60%;
     justify-content: flex-end;
+    font-size: 20px;
+    font-family: Bahnschrift Light;
 }
 
 .hader_right_row_para {
@@ -348,15 +374,17 @@ section {
     position: relative;
     animation: chatbox_index_key 2s;
 }
+
 @keyframes chatbox_index_key {
-        from{
-            font-size: 10;
-            opacity: 0.8;
-        }
-        to{
-            font-size: 15;
-            opacity: 1;
-        }
+    from {
+        font-size: 10;
+        opacity: 0.8;
+    }
+
+    to {
+        font-size: 15;
+        opacity: 1;
+    }
 }
 
 .chatbox_index_img {
