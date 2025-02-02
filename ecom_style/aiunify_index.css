@@ -29,7 +29,7 @@ header {
     background: linear-gradient(to right, #548F42 0%, #A9BB72 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
     z-index: 1;
     justify-content: center;
 }
@@ -44,7 +44,7 @@ header:hover {
     opacity: 0.9;
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +54,7 @@ footer{
     font-size: 20px;
     font-family: Bahnschrift Light;
 }
+
 /*==========================================Additional css on tags***************************************************/
 a {
     color: inherit;
@@ -96,6 +97,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/**********************************************Responsive Section*************************************************/
+@media(max-width:768px) {
+    section {
+        max-width: 768px;
+    }
 }
 
 /*=============!!!!!!!!!!!!!!!!!!!!!!!!!!!!Default Body Css Ends Here!!!!!!!!!!!!!!!!!!!!!!!!!!=================*/
@@ -171,6 +179,55 @@ section {
     flex-direction: row;
 }
 
+.responsive_right_nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive_right_nav {
+    display: none;
+}
+
+.responsive_header_option {
+    display: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.responsive_header_toggle {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.responsive_right_nav_icon {
+    width: 30px;
+}
+
+/************************************************Header Responsive************************************************/
+@media(max-width:900px) {
+    .header_nav_right {
+        display: none;
+    }
+
+    .responsive_right_nav {
+        display: flex;
+    }
+
+    .header_nav_right,
+    .hader_right_row_para {
+        width: 90%;
+    }
+}
+
+@media (min-width:900px) {
+    .responsive_header_option {
+        display: none !important;
+    }
+}
+
 /***************************************Main Container_1 Css Starts**************************************************/
 .container_1 {
     display: flex;
@@ -180,6 +237,8 @@ section {
     height: 900px;
     color: black;
 }
+
+
 
 .container_1_main_child {
     display: flex;
@@ -239,6 +298,35 @@ section {
 .container_1_main_child_blog img {
     width: 100%;
     border-radius: 20px;
+}
+
+/*************************************Responsive For Container -1*******************************************************/
+@media (max-width:768px) {
+    .container_1 {
+        height: 100vh;
+    }
+
+    .container_1_main_child {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .container_1_main_child_text_block {
+        margin-top: 50px;
+        font-size: 60px;
+    }
+
+    @keyframes mymove {
+        from {
+            font-size: 50px;
+        }
+
+        to {
+            font-size: 60px;
+        }
+    }
 }
 
 /***************************************Main Container_2 css starts**************************************************/
@@ -419,6 +507,45 @@ section {
     }
 }
 
+/*************************************Responsive For Container -2*******************************************************/
+@media(max-width:768px) {
+    .container_2 {
+        height: 100vh;
+        max-width: 768px;
+    }
+
+    .container_2_index_over_img_layar {
+        height: 100vh;
+    }
+
+    .container_2_chatbox_check_text_1 {
+        top: 200px;
+        right: 300px;
+    }
+
+    .container_2_chatbox_check_text_2 {
+        right: 150px;
+    }
+
+    .container_2_chatbox_check_text_3 {
+        left: 150px;
+    }
+
+    .container_2_chatbox_check_text_4 {
+        bottom: 500px;
+        left: 100px;
+    }
+
+    .container_2_chatbox_check_text_5 {
+        display: none;
+    }
+
+    .container_2_chatbox_check_text_6 {
+        bottom: 500px;
+        right: 250px;
+    }
+}
+
 /*---------------------------------------------------------------------Owl Carosoul Container-----------------------------------------------------*/
 .owl_index_slider {
     background-color: #2b2b2b;
@@ -503,6 +630,33 @@ section {
     }
 }
 
+/***************************************container_3 Responsive*********************************************************/
+@media(max-width:768px) {
+    .container_3 {
+        height: 100vh;
+        font-size: 30px;
+        padding: 100px;
+        max-width: 768px;
+
+    }
+
+    .container_3 h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+    }
+
+    @keyframes container_3_key {
+        from {
+            font-size: 30px;
+        }
+
+        to {
+            font-size: 33px;
+        }
+    }
+}
 
 /***************************************Main Container_4 Css Starts**************************************************/
 .container_4 {
@@ -555,6 +709,18 @@ section {
     list-style: none;
 }
 
+/*****************************************Container -4 Responsive*****************************************************/
+@media(max-width:768px) {
+    .container_4 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .index_aiunify_info_head {
+        font-size: 50px;
+    }
+}
+
 /***************************************Main Container-5 css starts***************************************************/
 .container_5 {
     display: flex;
@@ -578,7 +744,7 @@ section {
     align-items: center;
     width: 100vw;
     max-width: 1920px;
-    opacity: 0.9;
+    opacity: 0.5;
     position: relative;
     animation: main_img_index_light_image_1 2s;
 }
@@ -608,6 +774,7 @@ section {
     border-radius: 45px;
     width: 100px;
 }
+
 
 /***************************************Main Container_6 Css Starts**************************************************/
 .container_6 {
@@ -671,6 +838,14 @@ section {
     margin-right: 100px;
     line-height: 35px;
     font-family: Bahnschrift Light;
+}
+
+/*****************************************Container -5 Responsive*****************************************************/
+@media(max-width:768px) {
+    .container_6 {
+        width: 100%;
+        height: 100vh;
+    }
 }
 
 /**********************************************************Container 7**********************************************************************/
@@ -740,6 +915,23 @@ section {
     width: 150px;
     height: 50px;
     font-size: 20px;
+}
+
+/*********************************************Container_7 Responsive *******************************************/
+@media(max-width:768px) {}
+
+.container_7_text {
+    font-size: 20px;
+}
+
+@keyframes container_7_text_key {
+    from {
+        font-size: 15px;
+    }
+
+    to {
+        font-size: 20px;
+    }
 }
 
 /*Footer Css*/

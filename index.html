@@ -12,6 +12,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="ecom_img/logo_for_aiunify_text.jpeg">
     <link rel="stylesheet" href="ecom_style/aiunify_index.css">
 </head>
@@ -30,7 +31,12 @@
                             </a>
                         </li>
 
-
+                        <li class="responsive_right_nav">
+                            <div class="responsive_right_nav_icon" id="responsive_nav_icon" onclick="onclick_header_toggle()">
+                                <img src="ecom_img/burger-menu-svgrepo-com.svg">
+                            </div>
+                        </li>
+                        </li>
                         <li class="header_nav_right">
 
                             <div class="hader_right_row_para">
@@ -71,6 +77,43 @@
 
                     </ul>
                 </nav>
+            </div>
+            <div class="responsive_header_option">
+                <div class="responsive_header_toggle">
+                    <div class="hader_right_row_para">
+                        <div class="hader_right_row">
+
+                            <div class="header_right_ch1">
+                                <a href="#">
+                                    <h4>
+                                        overview
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="header_right_ch1">
+                                <a href="ecom_partner.html">
+                                    <h4>
+                                        Partners & Apps
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="header_right_ch1">
+                                <a href="#">
+                                    <h4>
+                                        How It Works
+                                    </h4>
+                                </a>
+                            </div>
+                            <div class="header_right_ch1">
+                                <a href="#">
+                                    <h4>
+                                        About
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -366,6 +409,9 @@
                 }
             }
         })
+    </script>
+    <script src="ecom_js/index.js">
+
     </script>
     <!---------------------------------------------------Main Javascript File-------------------------------------------------->
 </body>
