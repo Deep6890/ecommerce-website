@@ -215,9 +215,11 @@ section {
     .responsive_right_nav {
         display: flex;
     }
-    .header_nav_left{
+
+    .header_nav_left {
         font-size: 20px;
     }
+
     .header_nav_right,
     .hader_right_row_para {
         width: 90%;
@@ -525,7 +527,7 @@ section {
     }
 
     .container_2_header_2 {
-        margin-bottom: 250px;
+        margin-bottom: 300px;
     }
 
     .container_2_chatbox_check_text_1 {
@@ -556,6 +558,40 @@ section {
         display: none;
         bottom: 500px;
         right: 250px;
+    }
+}
+
+@media(max-width:500px) {
+    .container_2_header_1 {
+        font-size: 10px;
+    }
+
+    .container_2_header_2 {
+        font-size: 25px;
+    }
+
+    .chatbox_index {
+        font-size: 10px;
+    }
+
+    .chatbox_index_img {
+        max-width: 50px;
+    }
+
+    .container_2_chatbox_check_text_3 {
+        left: 100px;
+    }
+
+    @keyframes chatbox_index_key {
+        from {
+            font-size: 5;
+            opacity: 0.8;
+        }
+
+        to {
+            font-size: 10;
+            opacity: 1;
+        }
     }
 }
 
@@ -755,6 +791,27 @@ section {
     }
 }
 
+@media(max-width:600px) {
+    .index_aiunify_info_head {
+        font-size: 15px;
+    }
+
+    .index_aiunify_info_content {
+        font-size: 5px;
+        padding: 0px;
+    }
+
+    @keyframes index_aiunify_info_head_key {
+        form {
+            font-size: 10px;
+        }
+
+        to {
+            font-size: 15px;
+        }
+    }
+}
+
 /***************************************Main Container-5 css starts***************************************************/
 .container_5 {
     display: flex;
@@ -906,6 +963,16 @@ section {
     }
 }
 
+@media (max-width:500px) {
+    .index_need1_header {
+        font-size: 15px;
+    }
+
+    .index_need2_content {
+        font-size: 5px;
+    }
+}
+
 /**********************************************************Container 7**********************************************************************/
 .container_7 {
     display: flex;
@@ -1002,11 +1069,23 @@ section {
 
 /*Footer Responsive*/
 @media (max-width:768px) {
-    footer{
+    footer {
         min-height: 50px;
     }
+
     .footer_text {
         line-height: 20px;
         font-size: 10px;
+    }
+}
+
+@media(max-width:500px) {
+    footer {
+        min-height: 30px;
+    }
+
+    .footer_text {
+        line-height: 10px;
+        font-size: 5px;
     }
 }
