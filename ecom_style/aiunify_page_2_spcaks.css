@@ -44,7 +44,7 @@ header:hover {
     opacity: 0.9;
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +54,7 @@ footer{
     font-size: 20px;
     font-family: Bahnschrift Light;
 }
+
 /*==========================================Additional css on tags***************************************************/
 a {
     color: inherit;
@@ -249,6 +250,58 @@ iframe {
     flex-direction: row;
 }
 
+.responsive_right_nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive_right_nav {
+    display: none;
+}
+
+.responsive_header_option {
+    display: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.responsive_header_toggle {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.responsive_right_nav_icon {
+    width: 30px;
+}
+
+@media(max-width:900px) {
+    .header_nav_right {
+        display: none;
+    }
+
+    .responsive_right_nav {
+        display: flex;
+    }
+
+    .header_nav_left {
+        font-size: 20px;
+    }
+
+    .header_nav_right,
+    .hader_right_row_para {
+        width: 90%;
+    }
+}
+
+@media (min-width:900px) {
+    .responsive_header_option {
+        display: none !important;
+    }
+}
+
 /***************************************Main Container_1 Css Starts**************************************************/
 .container_1 {
     display: flex;
@@ -298,6 +351,36 @@ iframe {
     margin-top: 100px;
 }
 
+@media (max-width:768px)
+{
+    .container_1_header{
+        font-size: 10px;
+    }
+    @keyframes container_1_header_key {
+        0% {
+            font-size: 7px;
+        }
+    
+        100% {
+            font-size: 10px;
+        }
+    }
+    .main_owl_cont_text{
+        font-size: 10px;
+    }
+    .main_owl_cont_video{
+        max-width: 300px;
+    }
+    .item {
+        display: flex;
+        height: 100vh;
+    }
+    .main_owl_container_video{
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+}
+/*Owl Video*/
 .main_owl_cont_text {
     display: flex;
     justify-content: center;
@@ -447,7 +530,21 @@ iframe {
 .container_2_extra_toggle {
     font-family: Bahnschrift Light;
 }
-
+@media (max-width:768px)
+{
+    .container_2_extra_toggle{
+        font-size: 7px;
+    }
+    .contaier_3_toogle_text{
+        font-size: 15px;
+    }
+    .contaier_5_toogle_text{
+        font-size: 15px;
+    }
+    .contaier_6_toogle_text{
+        font-size: 15px;
+    }
+}
 /*****************************************************************Container-3********************************************************************/
 .container_3 {
     display: flex;
