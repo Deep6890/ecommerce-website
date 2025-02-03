@@ -215,7 +215,9 @@ section {
     .responsive_right_nav {
         display: flex;
     }
-
+    .header_nav_left{
+        font-size: 20px;
+    }
     .header_nav_right,
     .hader_right_row_para {
         width: 90%;
@@ -315,16 +317,20 @@ section {
 
     .container_1_main_child_text_block {
         margin-top: 50px;
-        font-size: 60px;
+        font-size: 35px;
+    }
+
+    .container_1_main_child_blog_img {
+        display: none;
     }
 
     @keyframes mymove {
         from {
-            font-size: 50px;
+            font-size: 30px;
         }
 
         to {
-            font-size: 60px;
+            font-size: 35px;
         }
     }
 }
@@ -518,7 +524,12 @@ section {
         height: 100vh;
     }
 
+    .container_2_header_2 {
+        margin-bottom: 250px;
+    }
+
     .container_2_chatbox_check_text_1 {
+        display: none;
         top: 200px;
         right: 300px;
     }
@@ -528,11 +539,12 @@ section {
     }
 
     .container_2_chatbox_check_text_3 {
+        top: 250px;
         left: 150px;
     }
 
     .container_2_chatbox_check_text_4 {
-        bottom: 500px;
+        bottom: 400px;
         left: 100px;
     }
 
@@ -541,6 +553,7 @@ section {
     }
 
     .container_2_chatbox_check_text_6 {
+        display: none;
         bottom: 500px;
         right: 250px;
     }
@@ -605,6 +618,13 @@ section {
     opacity: 0.8;
 }
 
+/*Responsive Owl For Slider*/
+.owl-item {}
+
+.item {
+    max-width: 200px;
+}
+
 /***************************************Main Container_3 Css Starts**************************************************/
 .container_3 {
     display: flex;
@@ -634,7 +654,7 @@ section {
 @media(max-width:768px) {
     .container_3 {
         height: 100vh;
-        font-size: 30px;
+        font-size: 20px;
         padding: 100px;
         max-width: 768px;
 
@@ -649,11 +669,11 @@ section {
 
     @keyframes container_3_key {
         from {
-            font-size: 30px;
+            font-size: 20px;
         }
 
         to {
-            font-size: 33px;
+            font-size: 23px;
         }
     }
 }
@@ -717,7 +737,21 @@ section {
     }
 
     .index_aiunify_info_head {
-        font-size: 50px;
+        font-size: 25px;
+    }
+
+    .index_aiunify_info_content {
+        font-size: 10px;
+    }
+
+    @keyframes index_aiunify_info_head_key {
+        form {
+            font-size: 20px;
+        }
+
+        to {
+            font-size: 25px;
+        }
     }
 }
 
@@ -775,6 +809,12 @@ section {
     width: 100px;
 }
 
+/*Container -5 Responsive*/
+@media(max-width:768px) {
+    .main_img_index_light_text {
+        font-size: 15px;
+    }
+}
 
 /***************************************Main Container_6 Css Starts**************************************************/
 .container_6 {
@@ -840,11 +880,29 @@ section {
     font-family: Bahnschrift Light;
 }
 
-/*****************************************Container -5 Responsive*****************************************************/
+/*****************************************Container -6 Responsive*****************************************************/
 @media(max-width:768px) {
     .container_6 {
         width: 100%;
         height: 100vh;
+    }
+
+    .index_need2_content {
+        font-size: 10px;
+    }
+
+    .index_need1_header {
+        font-size: 25px;
+    }
+
+    @keyframes index_need1_header_key {
+        from {
+            font-size: 20px;
+        }
+
+        to {
+            font-size: 25px;
+        }
     }
 }
 
@@ -918,19 +976,20 @@ section {
 }
 
 /*********************************************Container_7 Responsive *******************************************/
-@media(max-width:768px) {}
+@media(max-width:768px) {
 
-.container_7_text {
-    font-size: 20px;
-}
-
-@keyframes container_7_text_key {
-    from {
-        font-size: 15px;
+    .container_7_text {
+        font-size: 10px;
     }
 
-    to {
-        font-size: 20px;
+    @keyframes container_7_text_key {
+        from {
+            font-size: 5px;
+        }
+
+        to {
+            font-size: 10px;
+        }
     }
 }
 
@@ -939,4 +998,15 @@ section {
     font-size: 15px;
     word-spacing: 5px;
     line-height: 50px;
+}
+
+/*Footer Responsive*/
+@media (max-width:768px) {
+    footer{
+        min-height: 50px;
+    }
+    .footer_text {
+        line-height: 20px;
+        font-size: 10px;
+    }
 }
