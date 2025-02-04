@@ -655,10 +655,11 @@ section {
 }
 
 /*Responsive Owl For Slider*/
-.owl-item {}
+@media(max-width:768px) {
 
-.item {
-    max-width: 200px;
+    .item {
+        max-width: 200px;
+    }
 }
 
 /***************************************Main Container_3 Css Starts**************************************************/

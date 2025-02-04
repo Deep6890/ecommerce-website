@@ -351,35 +351,40 @@ iframe {
     margin-top: 100px;
 }
 
-@media (max-width:768px)
-{
-    .container_1_header{
+@media (max-width:768px) {
+    .container_1_header {
         font-size: 10px;
     }
+
     @keyframes container_1_header_key {
         0% {
             font-size: 7px;
         }
-    
+
         100% {
             font-size: 10px;
         }
     }
-    .main_owl_cont_text{
+
+    .main_owl_cont_text {
         font-size: 10px;
     }
-    .main_owl_cont_video{
+
+    .main_owl_cont_video {
         max-width: 300px;
     }
+
     .item {
         display: flex;
         height: 100vh;
     }
-    .main_owl_container_video{
+
+    .main_owl_container_video {
         margin-top: 0px !important;
         margin-bottom: 0px !important;
     }
 }
+
 /*Owl Video*/
 .main_owl_cont_text {
     display: flex;
@@ -530,21 +535,25 @@ iframe {
 .container_2_extra_toggle {
     font-family: Bahnschrift Light;
 }
-@media (max-width:768px)
-{
-    .container_2_extra_toggle{
+
+@media (max-width:768px) {
+    .container_2_extra_toggle {
         font-size: 7px;
     }
-    .contaier_3_toogle_text{
+
+    .contaier_3_toogle_text {
         font-size: 15px;
     }
-    .contaier_5_toogle_text{
+
+    .contaier_5_toogle_text {
         font-size: 15px;
     }
-    .contaier_6_toogle_text{
+
+    .contaier_6_toogle_text {
         font-size: 15px;
     }
 }
+
 /*****************************************************************Container-3********************************************************************/
 .container_3 {
     display: flex;
