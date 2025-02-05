@@ -480,17 +480,21 @@ input:hover{
 {
     .container_1{
         max-width: 768px;
+        height: 800px;
         margin: 10px;
     }
     .container_1_main{
         max-width: 768px;
     }
     .container_1_main form{
-        max-width: 768px;
+        max-width: 480px;
         flex-direction: column;
     }
     .container_1_inner{
         display: none;
+    }
+    .sign_in_form_main_container{
+        width:400;
     }
 }
 /******************************************************************Footer Css*******************************************************************/
