@@ -217,12 +217,13 @@ section {
     }
 
     .header_nav_left {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .header_nav_right,
     .hader_right_row_para {
         width: 90%;
+        font-size: 10px;
     }
 }
 

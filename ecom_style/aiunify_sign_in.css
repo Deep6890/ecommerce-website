@@ -11,6 +11,7 @@ body {
     width: 100vw;
     background-color: rgba(122, 121, 121, 0.628);
     color: rgb(0, 0, 0);
+    overflow-x: hidden;
 }
 
 img {
@@ -303,7 +304,6 @@ iframe {
 
 /***************************************Main Container_1 Css Starts**************************************************/
 .container_1 {
-    margin: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,19 +312,19 @@ iframe {
 }
 
 .container_1_main {
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 2%, rgba(0,0,0,1) 48%, rgba(120,120,120,1) 100%);
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100%;
-    background-color: rgb(19, 19, 19);
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 2%, rgba(0,0,0,1) 48%, rgba(120,120,120,1) 100%);
     border-radius: 25px;
     height: 1000px;
 }
 .container_1_main form {
-
+    margin: 0px;
     display: flex;
     position: relative;
     justify-content: center;
@@ -333,7 +333,7 @@ iframe {
     width: 100%;
     background-color: rgb(19, 19, 19);
     border-radius: 25px;
-    max-width: 1200px;
+    max-width: 1000px
 }
 
 .sign_in_form_main_container {
@@ -342,7 +342,7 @@ iframe {
     flex-direction: column;
     background-color: rgb(19, 19, 19);
     color: rgb(203, 203, 203);
-    width: 600px;
+    width: 500px;
     height: 750px;
     border-radius: 30px;
 }
