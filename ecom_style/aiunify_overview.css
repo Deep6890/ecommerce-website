@@ -1,0 +1,292 @@
+/*================================================Global Css======================================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    background-color: black;
+    overflow-x: hidden;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+/*=========================================This Css For Header  &  Footer========================================*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    background: #548F42;
+    background: linear-gradient(to right, #548F42 0%, #A9BB72 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    z-index: 1;
+    justify-content: center;
+}
+
+header:hover {
+    background-color: #f0f3f43a;
+    background: #8b8e9042;
+    background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    opacity: 0.9;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #83ab85;
+    width: 100%;
+    min-height: 100px;
+    font-size: 20px;
+    font-family: Bahnschrift Light;
+}
+
+/*==========================================Additional css on tags***************************************************/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+nav {
+
+    width: 100%;
+    padding: 25px 100px 10px 100px;
+    font-size: 17px;
+    justify-content: center;
+}
+
+video::-internal-media-controls {
+    display: none !important;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-webkit-media-controls-overlay-enclosure {
+    display: none !important;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**********************************************Responsive Section*************************************************/
+@media(max-width:768px) {
+    section {
+        max-width: 768px;
+    }
+}
+
+/*=============!!!!!!!!!!!!!!!!!!!!!!!!!!!!Default Body Css Ends Here!!!!!!!!!!!!!!!!!!!!!!!!!!=================*/
+/*Page Vise Csss*/
+.container {
+    display: flex;
+    width: 100%;
+    /*This Must Be Defult Column*/
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    /*This Must Be Defult Row*/
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.justify_content_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1920px;
+}
+
+/*=======================================Global Class Css Ends Here==============================================*/
+
+
+/*???????????????????????????????????????This is My Header's Style???????????????????????????????????????????????*/
+
+.main_header {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+}
+
+.header_nav_pannel {
+    /*ul list tag for header*/
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.header_nav_left {
+
+    font-size: 30px;
+    font-family: Bahnschrift Light;
+}
+
+.header_nav_right {
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-family: Bahnschrift Light;
+}
+
+.hader_right_row_para {
+    width: 60%;
+    justify-content: space-between;
+
+}
+
+.hader_right_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.responsive_right_nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive_right_nav {
+    display: none;
+}
+
+.responsive_header_option {
+    display: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.responsive_header_toggle {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.responsive_right_nav_icon {
+    width: 30px;
+}
+
+/************************************************Header Responsive************************************************/
+@media(max-width:900px) {
+    .header_nav_right {
+        display: none;
+    }
+
+    .responsive_right_nav {
+        display: flex;
+    }
+
+    .header_nav_left {
+        font-size: 15px;
+    }
+
+    .header_nav_right,
+    .hader_right_row_para {
+        width: 90%;
+        font-size: 10px;
+    }
+}
+
+@media (min-width:900px) {
+    .responsive_header_option {
+        display: none !important;
+    }
+}
+
+/***************************************Main Container_1 Css Starts**************************************************/
+.container_1 {
+    display: flex;
+    align-items: center;
+    background:black;
+    color:white;
+}
+.container_1_main_child{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.main_container_header h1{
+    display: flex;
+    font-family: Copperplate Gothic;
+}
+.container_1_content_ch{
+    display: flex;
+    max-width: 600px;
+    margin-top:100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    word-spacing: 12px;
+}
+/*Footer Css*/
+.footer_text {
+    font-size: 15px;
+    word-spacing: 5px;
+    line-height: 50px;
+}
+
+/*Footer Responsive*/
+@media (max-width:768px) {
+    footer {
+        min-height: 50px;
+    }
+
+    .footer_text {
+        line-height: 20px;
+        font-size: 10px;
+    }
+}
+
+@media(max-width:500px) {
+    footer {
+        min-height: 30px;
+    }
+
+    .footer_text {
+        line-height: 10px;
+        font-size: 5px;
+    }
+}
