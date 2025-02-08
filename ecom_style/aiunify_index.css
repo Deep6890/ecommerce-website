@@ -36,7 +36,7 @@ header {
 
 header:hover {
     background-color: #f0f3f43a;
-    background: #8b8e9042;
+    background: #74b2db42;
     background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -227,7 +227,11 @@ section {
     }
 
     nav {
-        padding: 20px;
+        padding: 20px 20px 5px 20px;
+    }
+    .hader_right_row
+    {
+        width: 60%;
     }
 }
 
