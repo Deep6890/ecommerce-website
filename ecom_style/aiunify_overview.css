@@ -231,6 +231,10 @@ section {
         width: 90%;
         font-size: 10px;
     }
+
+    nav {
+        padding: 10px !important;
+    }
 }
 
 @media (min-width:900px) {
@@ -378,15 +382,19 @@ section {
         max-width: 768px;
         padding: 10px;
     }
-    .container_1_content{
+
+    .container_1_content {
         padding: 20px;
     }
+
     .container_1_content_ch {
         font-size: 10px;
     }
-    ul{
+
+    ul {
         padding: 0px;
     }
+
     .content_header {
         font-size: 20px;
     }

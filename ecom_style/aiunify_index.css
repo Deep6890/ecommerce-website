@@ -225,6 +225,10 @@ section {
         width: 90%;
         font-size: 10px;
     }
+
+    nav {
+        padding: 20px;
+    }
 }
 
 @media (min-width:900px) {
@@ -316,11 +320,12 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        padding: 10px;
     }
 
     .container_1_main_child_text_block {
         margin-top: 50px;
-        font-size: 35px;
+        font-size: 43px;
     }
 
     .container_1_main_child_blog_img {
@@ -329,11 +334,11 @@ section {
 
     @keyframes mymove {
         from {
-            font-size: 30px;
+            font-size: 39px;
         }
 
         to {
-            font-size: 35px;
+            font-size: 43px;
         }
     }
 }
@@ -693,7 +698,7 @@ section {
     .container_3 {
         height: 100vh;
         font-size: 20px;
-        padding: 100px;
+        padding: 10px;
         max-width: 768px;
 
     }
@@ -779,7 +784,12 @@ section {
     }
 
     .index_aiunify_info_content {
-        font-size: 10px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .index_aiunify_info {
+        padding: 10px;
     }
 
     @keyframes index_aiunify_info_head_key {
@@ -799,7 +809,7 @@ section {
     }
 
     .index_aiunify_info_content {
-        font-size: 5px;
+        font-size: 10px;
         padding: 0px;
     }
 
@@ -946,8 +956,12 @@ section {
         height: 100vh;
     }
 
+    .index_need_aiunify {
+        padding: 10px;
+    }
+
     .index_need2_content {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .index_need1_header {
@@ -971,7 +985,7 @@ section {
     }
 
     .index_need2_content {
-        font-size: 5px;
+        font-size: 10px;
     }
 }
 
@@ -1048,7 +1062,7 @@ section {
 @media(max-width:768px) {
 
     .container_7_text {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     @keyframes container_7_text_key {
@@ -1057,8 +1071,14 @@ section {
         }
 
         to {
-            font-size: 10px;
+            font-size: 13px;
         }
+    }
+    .container_7_button button{
+        border: 2px solid black;
+        width: 70px;
+        height: 30px;
+        font-size: 10px;
     }
 }
 
