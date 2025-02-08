@@ -178,6 +178,7 @@ iframe {
     height: 700px;
     background-color: black;
     color: black;
+    padding: 0px 5px 0px 5px;
 
 }
 
@@ -211,6 +212,10 @@ iframe {
     display: flex;
     justify-content: center;
     max-width: 1920px;
+}
+
+.main_header:hover {
+    background-color: #0000003d;
 }
 
 .header_nav_pannel {
@@ -293,6 +298,14 @@ iframe {
     .header_nav_right,
     .hader_right_row_para {
         width: 90%;
+    }
+
+    .hader_right_row {
+        width: 60%;
+    }
+
+    nav {
+        padding: 20px 20px 5px 20px;
     }
 }
 

@@ -1,3 +1,5 @@
+/***************************************Main js Starts**********************************************************/
+/*********************************************Header Js Starts****************************************************/
 var header_icon_value = true;
 function onclick_header_toggle() {
     var header_toggle_value = document.querySelector(".responsive_header_option");
@@ -9,4 +11,31 @@ function onclick_header_toggle() {
         header_toggle_value.style.display = "none";
         header_icon_value = true;
     }
+}
+/*****************************************************Header Js Ends**********************************************/
+/*********************************************Main Container -1 Js Starts*****************************************/
+function myMoveAnimation() {
+    var v = document.querySelector(".container_1_main_child_text_block");
+    v.classList.add('myMove_animation');
+    console.log("Misson Done");
+}
+window.onload = myMoveAnimation;
+
+/*********************************************Main Container-2 Js starts******************************************/
+
+function chatbox_index_key_ani() {
+    var elements = document.querySelectorAll(".chatbox_index");
+    elements.forEach(function (element) {
+        element.classList.add('chatbox_index_key');
+    });
+    console.log("Mission Done");
+}
+/*******************************************Main Container-3 js starts*******************************************/
+
+function chatbox_index_key_ani() {
+    var elements = document.querySelectorAll(".chatbox_index");
+    elements.forEach(function (element) {
+        element.classList.add('chatbox_index_key');
+    });
+    console.log("Mission Done");
 }

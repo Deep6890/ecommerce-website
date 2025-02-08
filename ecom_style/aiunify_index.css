@@ -141,7 +141,9 @@ section {
     justify-content: center;
     max-width: 1920px;
 }
-
+.main_header:hover{
+    background-color: #0000003d;
+}
 .header_nav_pannel {
     /*ul list tag for header*/
     display: flex;
@@ -229,8 +231,8 @@ section {
     nav {
         padding: 20px 20px 5px 20px;
     }
-    .hader_right_row
-    {
+
+    .hader_right_row {
         width: 60%;
     }
 }
@@ -270,10 +272,14 @@ section {
     flex-direction: column;
     Font-size: 55px;
     position: relative;
-    animation: mymove 1s;
+
     font-family: Ink Free;
     font-weight: 600;
     width: 50%;
+}
+
+.myMove_animation {
+    animation: mymove 1s;
 }
 
 @keyframes mymove {
@@ -478,17 +484,23 @@ section {
     margin: 0px 10px 10px 10px;
     font-family: Bahnschrift Light;
     position: relative;
+
+}
+
+.chatbox_index_key {
     animation: chatbox_index_key 2s;
 }
 
 @keyframes chatbox_index_key {
     from {
-        font-size: 10;
+        display: none;
+        font-size: 0px;
         opacity: 0.8;
     }
 
     to {
-        font-size: 15;
+        display: flex;
+        font-size: 15px;
         opacity: 1;
     }
 }
@@ -547,7 +559,7 @@ section {
     }
 
     .container_2_chatbox_check_text_2 {
-        right: 150px;
+        right: 100px;
     }
 
     .container_2_chatbox_check_text_3 {
@@ -742,9 +754,12 @@ section {
     align-items: center;
     padding: 20px;
 }
-
+.index_aiunify_info_cont{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
 .index_aiunify_info_head {
-    padding-right: 100px;
     font-size: 70px;
     font-family: ink free;
     position: relative;
@@ -784,7 +799,7 @@ section {
     }
 
     .index_aiunify_info_head {
-        font-size: 25px;
+        font-size: 45px;
     }
 
     .index_aiunify_info_content {
@@ -809,7 +824,7 @@ section {
 
 @media(max-width:600px) {
     .index_aiunify_info_head {
-        font-size: 15px;
+        font-size: 35px;
     }
 
     .index_aiunify_info_content {
@@ -1078,7 +1093,8 @@ section {
             font-size: 13px;
         }
     }
-    .container_7_button button{
+
+    .container_7_button button {
         border: 2px solid black;
         width: 70px;
         height: 30px;

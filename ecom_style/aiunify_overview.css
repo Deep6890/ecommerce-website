@@ -148,6 +148,10 @@ section {
     max-width: 1920px;
 }
 
+.main_header:hover {
+    background-color: #0000003d;
+}
+
 .header_nav_pannel {
     /*ul list tag for header*/
     display: flex;
@@ -220,6 +224,10 @@ section {
 
     .responsive_right_nav {
         display: flex;
+    }
+
+    .hader_right_row {
+        width: 60%;
     }
 
     .header_nav_left {
