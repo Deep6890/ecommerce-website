@@ -169,7 +169,9 @@ iframe {
     background-color: transparent;
     border: 1px solid rgb(127, 208, 145);
 }
-
+.hamburger_toggle path{
+    fill: wheat;
+}
 .slink_container {
     display: flex;
     justify-content: center;
