@@ -131,6 +131,12 @@ section {
     max-width: 1920px;
 }
 
+/*globle Tags For CHange Css */
+.invert_row {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+}
+
 /*=======================================Global Class Css Ends Here==============================================*/
 
 
@@ -237,35 +243,170 @@ section {
 .container_1 {
     display: flex;
     align-items: center;
-    background:black;
-    color:white;
-}
-.container_1_main_child{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+    background: black;
+    color: white;
     width: 100%;
 }
 
-.main_container_header h1{
+.container_1_main_child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container_1_content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px 100px 100px;
+    width: 100%;
+}
+
+.main_container_header h1 {
     display: flex;
     font-family: Copperplate Gothic;
+    margin-top: 150px;
 }
-.container_1_content_ch{
+
+.container_1_content_ch {
     display: flex;
     max-width: 600px;
-    margin-top:100px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     line-height: 25px;
     word-spacing: 12px;
 }
+
+/*********************************************List of Container 1 Css Starts***************************************/
+.content_text_list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.content_text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 17px;
+    line-height: 25px;
+    word-spacing: 10px;
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(216, 216, 216);
+
+}
+
+
+.content_img {
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+
+}
+
+.ideal_list_key {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_list_content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    animation: content_text 3s;
+    position: absolute;
+    position: relative
+}
+
+.invert_row {
+    animation: content_text_invert 3s !important;
+}
+
+@keyframes content_text_invert {
+    from {
+        left: 520px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes content_text {
+    from {
+        right: 520px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+.content_header {
+    display: flex;
+    flex-direction: row;
+    font-size: 35px;
+    margin-bottom: 50px;
+    font-family: Bahnschrift Light;
+}
+
+.home_assist {
+    fill: #e9e9e9;
+}
+
+.language_assist path {
+    fill: aliceblue;
+}
+
+.smart_home_assist path {
+    fill: aliceblue;
+}
+
+/****************************************************Responsive Container One***********************************************************/
+
+@media(max-width:768px) {
+    .container_1 {
+        max-width: 768px;
+    }
+
+    .container_1_content_ch {
+        font-size: 8px;
+    }
+
+    .content_header {
+        font-size: 20px;
+    }
+
+    .content_text {
+        font-size: 7px;
+        line-height: 20px;
+    }
+
+    .content_img {
+        max-width: 100px;
+    }
+
+    svg {
+        max-width: 100px;
+    }
+}
+
+/****************************************************Main Footer Containt Start**********************************/
 /*Footer Css*/
 .footer_text {
     font-size: 15px;
     word-spacing: 5px;
     line-height: 50px;
+    word-spacing: 15px;
 }
 
 /*Footer Responsive*/
