@@ -579,11 +579,11 @@ iframe {
     }
 
     .sportify_img {
-        width: 450px;
+        width: 350px;
     }
 
     .yt_img {
-        width: 450px;
+        width: 300px;
     }
 }
 
@@ -664,17 +664,17 @@ iframe {
 
 @media(max-width:768px) {
     .gemini_img {
-        width: 450px;
+        width: 350px;
     }
 
     .gpt_img {
         margin-top: 60px;
-        width: 450px;
+        width: 350px;
     }
 
     .meta_img {
         margin-top: 60px;
-        width: 450px;
+        width: 350px;
     }
 
     .copilot_img {
