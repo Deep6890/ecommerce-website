@@ -169,9 +169,19 @@ iframe {
     background-color: transparent;
     border: 1px solid rgb(127, 208, 145);
 }
-.hamburger_toggle path{
+
+@media(max-width:768px) {
+    .toggle_button {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
+
+.hamburger_toggle path {
     fill: wheat;
 }
+
 .slink_container {
     display: flex;
     justify-content: center;
@@ -368,7 +378,7 @@ iframe {
 
 @media (max-width:768px) {
     .container_1_header {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     @keyframes container_1_header_key {
@@ -377,7 +387,7 @@ iframe {
         }
 
         100% {
-            font-size: 10px;
+            font-size: 9px;
         }
     }
 
@@ -567,6 +577,14 @@ iframe {
     .contaier_6_toogle_text {
         font-size: 15px;
     }
+
+    .sportify_img {
+        width: 450px;
+    }
+
+    .yt_img {
+        width: 450px;
+    }
 }
 
 /*****************************************************************Container-3********************************************************************/
@@ -642,6 +660,27 @@ iframe {
 
 .container_3_extra_toggle {
     font-family: Bahnschrift Light;
+}
+
+@media(max-width:768px) {
+    .gemini_img {
+        width: 450px;
+    }
+
+    .gpt_img {
+        margin-top: 60px;
+        width: 450px;
+    }
+
+    .meta_img {
+        margin-top: 60px;
+        width: 450px;
+    }
+
+    .copilot_img {
+        margin-top: 100px;
+        width: 200px;
+    }
 }
 
 /*****************************************************************Container -4 *****************************************************************/
@@ -732,6 +771,16 @@ iframe {
     flex-direction: row;
 }
 
+@media (max-width:768px) {
+    .prime_img {
+        width: 300px
+    }
+
+    .netflix_img {
+        width: 300px
+    }
+}
+
 /*****************************************************************Container_5 Toggle ************************************************************/
 .discovery_info {
     display: flex;
@@ -797,6 +846,12 @@ iframe {
     flex-direction: row;
 }
 
+@media (max-width:768px) {
+    .google_img {
+        width: 300px !important;
+    }
+}
+
 /*****************************************************************Container_6 Toggle ************************************************************/
 .dolby_info {
     display: flex;
@@ -824,6 +879,12 @@ iframe {
 
 .container_6_extra_toggle {
     font-family: Bahnschrift Light;
+}
+
+@media (max-width:768px) {
+    .dolby_img {
+        width: 300px !important;
+    }
 }
 
 /******************************************************************Footer Css*******************************************************************/
