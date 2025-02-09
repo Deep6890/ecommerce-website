@@ -488,11 +488,11 @@ section {
     position: relative;
 }
 
-.chatbox_index_key {
+.chatbox_index_key_rise {
     animation: chatbox_index_key_enter 2s;
 }
 
-.img {
+.chatbox_index_img_key_rise {
     animation: mouse_enter_img_animation 2s;
 }
 
@@ -500,7 +500,7 @@ section {
     animation: chatbox_index_key_leave 2s;
 }
 
-.img_out {
+.chatbox_index_img_key_out {
     animation: mouse_leave_img_animation 2s;
 }
 
@@ -519,15 +519,14 @@ section {
 }
 
 @keyframes chatbox_index_key_leave {
-
     from {
-        display: none;
+        display: flex;
         font-size: 15px;
         opacity: 1;
     }
 
     to {
-        display: flex;
+        display: none;
         font-size: 0px;
         opacity: 0.8;
     }
@@ -535,14 +534,15 @@ section {
 
 @keyframes mouse_leave_img_animation {
     from {
-        display: none;
+        display: flex;
         max-width: 100px;
-
+        opacity: 1;
     }
 
     to {
-        display: flex;
+        display: none;
         max-width: 0px;
+        opacity: 0.8;
     }
 }
 
@@ -550,12 +550,13 @@ section {
     from {
         display: none;
         max-width: 0px;
-
+        opacity: 0.8;
     }
 
     to {
         display: flex;
         max-width: 100px;
+        opacity: 1;
     }
 }
 

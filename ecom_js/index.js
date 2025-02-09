@@ -23,34 +23,47 @@ window.onload = myMoveAnimation;
 
 /*********************************************Main Container-2 Js starts******************************************/
 
-function chatbox_index_key_ani() {
-    var elements = document.querySelectorAll(".chatbox_index");
-    elements.forEach(function (element) {
-        element.classList.add('chatbox_index_key');
+function chatbox_index_key_rise() {
+    /*First Function for chatbox rise up*/
+
+    var chat_box_rise = document.querySelectorAll(".chatbox_index_key_rise");
+    chat_box_rise.forEach(function (chat_box_rise_function) {
+        chat_box_rise_function.classList.add('chatbox_index_key_enter');
     });
+
     console.log("Mission Done");
 }
 
-function chatbox_index_key_ani_2() {
-    var elements_js = document.querySelectorAll(".chatbox_index_img");
-    elements_js.forEach(function (element_js) {
-        element_js.classList.add('img');
+function chatbox_index_img_key_rise() {
+    /*Second Function for chatbox img rise up*/
+
+    var chat_box_img_rise = document.querySelectorAll(".chatbox_index_img_key_rise");
+    chat_box_img_rise.forEach(function (chat_box_img_rise_function) {
+        chat_box_img_rise_function.classList.add('mouse_enter_img_animation');
     });
+
     console.log("Done");
 }
-function chatbox_index_key_ani() {
-    var elements = document.querySelectorAll(".chatbox_index");
-    elements.forEach(function (element) {
-        element.classList.add('chatbox_index_key');
+function chatbox_index_key_set_down() {
+    /*third Function for chatbox set down*/
+
+    var chat_box_up = document.querySelectorAll(".chatbox_index_key_out");
+    chat_box_up.forEach(function (chat_box_up_function) {
+        chat_box_up_function.classList.add('chatbox_index_key_leave');
     });
+
     console.log("Mission Done");
 }
 
-function chatbox_index_key_ani_2() {
-    var elements_js = document.querySelectorAll(".chatbox_index_img");
-    elements_js.forEach(function (element_js) {
-        element_js.classList.add('img');
+function chatbox_index_key_img_set_down() {
+    /*Fourth Function for chatbox img set down*/
+
+    var chat_box_img_up = document.querySelectorAll(".chatbox_index_img_key_out");
+    chat_box_img_up.forEach(function (chat_box_img_up_function) {
+        chat_box_img_up_function.classList.add('mouse_leave_img_animation');
     });
+
     console.log("Done");
 }
+
 /*******************************************Main Container-3 js starts*******************************************/
