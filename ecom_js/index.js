@@ -30,8 +30,14 @@ function chatbox_index_key_ani() {
     });
     console.log("Mission Done");
 }
-/*******************************************Main Container-3 js starts*******************************************/
 
+function chatbox_index_key_ani_2() {
+    var elements_js = document.querySelectorAll(".chatbox_index_img");
+    elements_js.forEach(function (element_js) {
+        element_js.classList.add('img');
+    });
+    console.log("Done");
+}
 function chatbox_index_key_ani() {
     var elements = document.querySelectorAll(".chatbox_index");
     elements.forEach(function (element) {
@@ -39,3 +45,12 @@ function chatbox_index_key_ani() {
     });
     console.log("Mission Done");
 }
+
+function chatbox_index_key_ani_2() {
+    var elements_js = document.querySelectorAll(".chatbox_index_img");
+    elements_js.forEach(function (element_js) {
+        element_js.classList.add('img');
+    });
+    console.log("Done");
+}
+/*******************************************Main Container-3 js starts*******************************************/

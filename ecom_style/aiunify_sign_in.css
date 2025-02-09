@@ -309,6 +309,7 @@ iframe {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    margin: 0px;
 }
 
 .container_1_main {
@@ -492,7 +493,6 @@ input:hover {
     .container_1 {
         max-width: 768px;
         height: 800px;
-        margin: 10px;
     }
 
     .container_1_main {
@@ -507,7 +507,9 @@ input:hover {
     .container_1_inner {
         display: none;
     }
-
+    .sign_in_skip{
+        right: 5px;
+    }
     .sign_in_form_main_container {
         width: 400;
     }

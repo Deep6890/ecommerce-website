@@ -141,9 +141,11 @@ section {
     justify-content: center;
     max-width: 1920px;
 }
-.main_header:hover{
+
+.main_header:hover {
     background-color: #0000003d;
 }
+
 .header_nav_pannel {
     /*ul list tag for header*/
     display: flex;
@@ -479,19 +481,30 @@ section {
     color: #0b0b0b;
     border-radius: 45px;
     padding: 0px 20px 0px 20px;
-    font-size: 10px;
-    opacity: 0.8;
+    font-size: 15px;
+    opacity: 1;
     margin: 0px 10px 10px 10px;
     font-family: Bahnschrift Light;
     position: relative;
-
 }
 
 .chatbox_index_key {
-    animation: chatbox_index_key 2s;
+    animation: chatbox_index_key_enter 2s;
 }
 
-@keyframes chatbox_index_key {
+.img {
+    animation: mouse_enter_img_animation 2s;
+}
+
+.chatbox_index_key_out {
+    animation: chatbox_index_key_leave 2s;
+}
+
+.img_out {
+    animation: mouse_leave_img_animation 2s;
+}
+
+@keyframes chatbox_index_key_enter {
     from {
         display: none;
         font-size: 0px;
@@ -505,13 +518,53 @@ section {
     }
 }
 
+@keyframes chatbox_index_key_leave {
+
+    from {
+        display: none;
+        font-size: 15px;
+        opacity: 1;
+    }
+
+    to {
+        display: flex;
+        font-size: 0px;
+        opacity: 0.8;
+    }
+}
+
+@keyframes mouse_leave_img_animation {
+    from {
+        display: none;
+        max-width: 100px;
+
+    }
+
+    to {
+        display: flex;
+        max-width: 0px;
+    }
+}
+
+@keyframes mouse_enter_img_animation {
+    from {
+        display: none;
+        max-width: 0px;
+
+    }
+
+    to {
+        display: flex;
+        max-width: 100px;
+    }
+}
+
 .chatbox_index_img {
     display: flex;
     justify-content: flex-end;
     margin-right: 15px;
     max-width: 100px;
     position: relative;
-    animation: chatbox_index_key 2s;
 }
 
 .container_2_header_2 {
@@ -754,11 +807,13 @@ section {
     align-items: center;
     padding: 20px;
 }
-.index_aiunify_info_cont{
+
+.index_aiunify_info_cont {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
+
 .index_aiunify_info_head {
     font-size: 70px;
     font-family: ink free;
