@@ -1,5 +1,10 @@
 /***************************************Main js Starts**********************************************************/
 /*********************************************Header Js Starts****************************************************/
+var pop_up_ref = true;
+function onclick_pop() {
+
+}
+
 var header_icon_value = true;
 function onclick_header_toggle() {
     var header_toggle_value = document.querySelector(".responsive_header_option");
