@@ -6,6 +6,7 @@ function onclick_pop() {
     if (pop_up_ref == true) {
        pop_toggle_container.style.display = "flex";
         pop_up_ref = false;
+        console.log("Js Called");
     }
     else {
         pop_toggle_container.style.display = "none";
