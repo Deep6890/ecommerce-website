@@ -3,13 +3,13 @@
 var pop_up_ref = true;
 function onclick_pop() {
     var pop_toggle_container = document.querySelector(".container container_1_pop");
-    if (header_icon_value == true) {
-        header_toggle_value.style.display = "flex";
-        header_icon_value = false;
+    if (pop_up_ref == true) {
+       pop_toggle_container.style.display = "flex";
+        pop_up_ref = false;
     }
     else {
-        header_toggle_value.style.display = "none";
-        header_icon_value = true;
+        pop_toggle_container.style.display = "none";
+        pop_up_ref = true;
     }
 }
 
