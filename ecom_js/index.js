@@ -1,17 +1,9 @@
 /***************************************Main js Starts**********************************************************/
 /*********************************************Header Js Starts****************************************************/
-var pop_up_ref = true;
+
 function onclick_pop() {
-    var pop_toggle_container = document.querySelector(".container_1_pop");
-    if (pop_up_ref == true) {
-       pop_toggle_container.style.display = "flex";
-        pop_up_ref = false;
-        console.log("Js Called");
-    }
-    else {
-        pop_toggle_container.style.display = "none";
-        pop_up_ref = true;
-    }
+    let pop_toggle_container = document.querySelector(".container_1_pop");
+    pop_toggle_container.style.display="none";
 }
 
 var header_icon_value = true;
