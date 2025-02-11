@@ -2,7 +2,7 @@
 /*********************************************Header Js Starts****************************************************/
 var pop_up_ref = true;
 function onclick_pop() {
-    var pop_toggle_container = document.querySelector(".container container_1_pop");
+    var pop_toggle_container = document.querySelector(".container_1_pop");
     if (pop_up_ref == true) {
        pop_toggle_container.style.display = "flex";
         pop_up_ref = false;
