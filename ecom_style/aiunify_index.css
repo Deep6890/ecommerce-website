@@ -2301,20 +2301,6 @@ input:hover {
 
 /*Sign in Responsive Setup*/
 @media(max-width:768px) {
-    .container_1 {
-        max-width: 768px;
-        height: 800px;
-    }
-
-    .container_1_main {
-        max-width: 768px;
-    }
-
-    .container_1_main form {
-        max-width: 300px;
-        flex-direction: column;
-    }
-
     .container_1_inner {
         display: none;
     }
