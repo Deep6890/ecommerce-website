@@ -25,21 +25,15 @@ header {
     flex-direction: row;
     position: fixed;
     width: 100%;
-    background: #548F42;
-    background: linear-gradient(to right, #548F42 0%, #A9BB72 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+    color: #548F42;
+    background-color:#101010;
+    opacity: .9;
     z-index: 1;
     justify-content: center;
 }
 
 header:hover {
-    background-color: #f0f3f43a;
-    background: #74b2db42;
-    background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-color: #000000;
 
     opacity: 0.9;
 }
@@ -77,13 +71,21 @@ a:visited {
 }
 
 nav {
-
+    display: flex;
+    max-height:100px;
     width: 100%;
-    padding: 25px 100px 10px 100px;
+    padding: 25px 100px 25px 100px;
     font-size: 17px;
+    align-items: center;
     justify-content: center;
 }
-
+h1,h2,h3,h5,h6,h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
 video::-internal-media-controls {
     display: none !important;
 }
@@ -156,13 +158,12 @@ section {
 
 .main_header {
     display: flex;
+    box-shadow: rgb(35, 35, 35) 10px 30px 50px  10px;
     justify-content: center;
     max-width: 1920px;
+    border-radius: 10px;
 }
 
-.main_header:hover {
-    background-color: #0000003d;
-}
 
 .header_nav_pannel {
     /*ul list tag for header*/
@@ -172,14 +173,21 @@ section {
     list-style: none;
     justify-content: space-between;
     padding: 0px;
+    margin: 0px;
 }
-
+.header_right_ch1{
+    display: flex;
+    background-color: rgba(8, 8, 8, 0.06);
+    height: 50px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+}
 .header_nav_left {
 
     font-size: 30px;
     font-family: Bahnschrift Light;
 }
-
 .header_nav_right {
     display: flex;
     width: 60%;
@@ -189,6 +197,8 @@ section {
 }
 
 .hader_right_row_para {
+    display: flex;
+    align-items: center;
     width: 60%;
     justify-content: space-between;
 
@@ -199,6 +209,7 @@ section {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    width: 100%;
 }
 
 .responsive_right_nav {
@@ -322,6 +333,8 @@ section {
     align-items: center;
     justify-content: center;
     font-family: Bahnschrift Light;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .main_pop_window_header h1 {
@@ -354,7 +367,7 @@ section {
 
 .main_pop_up_content_sign_in button {
     width: 100px;
-    height: 30px;
+    height: 35px;
     margin-top: 25px;
     margin-left: 25px;
     border-radius: 15px;
@@ -371,7 +384,9 @@ section {
     color: aliceblue;
     font-size: 10px;
     font-family: Bahnschrift Light;
-    padding-right: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+    cursor: default;
 }
 
 /***************************************Main Container_1 Css Starts**************************************************/
@@ -387,7 +402,7 @@ section {
     color: black;
 }
 
-.container_main_index{
+.container_main_index {
     max-height: 920px;
 }
 
@@ -505,9 +520,11 @@ section {
     z-index: 0;
     background-color: #1e1f21;
 }
-.chatbox_container_2{
+
+.chatbox_container_2 {
     min-height: 900px;
 }
+
 .container_2_chatbox {
     display: flex;
     justify-content: center;
@@ -613,7 +630,12 @@ section {
     width: 100%;
     z-index: 1;
 }
-
+.chatbox_index_main_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .chatbox_index {
     display: flex;
     justify-content: center;
@@ -621,84 +643,12 @@ section {
     background-color: #e7f5f9;
     color: #0b0b0b;
     border-radius: 45px;
-    padding: 0px 20px 0px 20px;
+    padding: 10px 20px 10px 20px;
     font-size: 15px;
     opacity: 1;
     margin: 0px 10px 10px 10px;
     font-family: Bahnschrift Light;
     position: relative;
-}
-
-.chatbox_index_key_rise {
-    animation: chatbox_index_key_enter 2s;
-}
-
-.chatbox_index_img_key_rise {
-    animation: mouse_enter_img_animation 2s;
-}
-
-.chatbox_index_key_out {
-    animation: chatbox_index_key_leave 2s;
-}
-
-.chatbox_index_img_key_out {
-    animation: mouse_leave_img_animation 2s;
-}
-
-@keyframes chatbox_index_key_enter {
-    from {
-        display: none;
-        font-size: 0px;
-        opacity: 0.8;
-    }
-
-    to {
-        display: flex;
-        font-size: 15px;
-        opacity: 1;
-    }
-}
-
-@keyframes chatbox_index_key_leave {
-    from {
-        display: flex;
-        font-size: 15px;
-        opacity: 1;
-    }
-
-    to {
-        display: none;
-        font-size: 0px;
-        opacity: 0.8;
-    }
-}
-
-@keyframes mouse_leave_img_animation {
-    from {
-        display: flex;
-        max-width: 100px;
-        opacity: 1;
-    }
-
-    to {
-        display: none;
-        max-width: 0px;
-        opacity: 0.8;
-    }
-}
-
-@keyframes mouse_enter_img_animation {
-    from {
-        display: none;
-        max-width: 0px;
-        opacity: 0.8;
-    }
-
-    to {
-        display: flex;
-        max-width: 100px;
-        opacity: 1;
-    }
 }
 
 .chatbox_index_img {
@@ -1478,29 +1428,6 @@ section {
     ;
 }
 
-.invert_row {
-    animation: content_text_invert 3s !important;
-}
-
-@keyframes content_text_invert {
-    from {
-        left: 520px;
-    }
-
-    to {
-        left: 0px;
-    }
-}
-
-@keyframes content_text_right {
-    from {
-        right: 520px;
-    }
-
-    to {
-        right: 0px;
-    }
-}
 
 .content_header {
     display: flex;
@@ -1914,9 +1841,9 @@ div:has(.index_slink_img_back) {
     justify-content: center;
 }
 
-.card:hover .card_inner {
+/*.card:hover .card_inner {
     transform: rotateY(180deg);
-}
+}*/
 
 .impoted_toggle {
     backface-visibility: hidden;

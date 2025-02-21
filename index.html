@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ecom_style/hover.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="ecom_img/logo_for_aiunify_text.jpeg">
     <link rel="stylesheet" href="ecom_style/aiunify_index.css">
@@ -27,7 +31,7 @@
 
                         <li class="header_nav_left">
                             <a href="index.html">
-                                <h1><i>AiuniFy</i></h1>
+                                <h1> <i>AiuniFy</i></h1>
                             </a>
                         </li>
 
@@ -43,28 +47,28 @@
                             <div class="hader_right_row_para">
                                 <div class="hader_right_row">
 
-                                    <div class="header_right_ch1">
+                                    <div class="header_right_ch1 hvr-buzz-out">
                                         <a href="ecom_overview.html">
                                             <h4>
                                                 overview
                                             </h4>
                                         </a>
                                     </div>
-                                    <div class="header_right_ch1">
+                                    <div class="header_right_ch1 hvr-buzz-out">
                                         <a href="ecom_partner.html">
                                             <h4>
                                                 Partners & Apps
                                             </h4>
                                         </a>
                                     </div>
-                                    <div class="header_right_ch1">
+                                    <div class="header_right_ch1 hvr-buzz-out">
                                         <a href="#">
                                             <h4>
                                                 About
                                             </h4>
                                         </a>
                                     </div>
-                                    <div class="header_right_ch1">
+                                    <div class="header_right_ch1 hvr-buzz-out">
                                         <a href="ecom_sign_in.html">
                                             <h4>
                                                 sign in
@@ -137,7 +141,7 @@
                     </h4>
                 </div>
                 <div class="main_pop_up_content_sign_in">
-                    <button>Sign in</button>
+                    <button class="hvr-forward">Sign in</button>
                 </div>
             </div>
         </div>
@@ -170,55 +174,66 @@
         <div class="container container_2 chatbox_container_2">
             <div class="row justify_content_center">
                 <div class="container_2_chatbox">
-                    <div class="container_2_chatbox_check"
-                        onmouseover="chatbox_index_key_rise(),chatbox_index_img_key_rise()">
+                    <div class="container_2_chatbox_check">
                         <div class="container_2_chatbox_check_text_1">
-                            <div class="chatbox_index_img">
-                                <img src="ecom_img/chatbox_upper_cut.svg">
-                            </div>
-                            <div class="chatbox_index">
-                                <h2>Turn off T.V.</h2>
+                            <div class="chatbox_index_main_box" >
+                                <div class="chatbox_index_img">
+                                    <img src="ecom_img/chatbox_upper_cut.svg">
+                                </div>
+                                <div class="chatbox_index " data-aos="fade-up">
+                                    <h2>Turn off T.V.</h2>
+                                </div>
                             </div>
                         </div>
                         <div class="container_2_chatbox_check_text_2">
-                            <div class="chatbox_index_img">
-                                <img src="ecom_img/chatbox_upper_cut.svg">
-                            </div>
-                            <div class="chatbox_index">
-                                <h1>Play Somthing Unique</h1>
+                            <div class="chatbox_index_main_box">
+                                <div class="chatbox_index_img">
+                                    <img src="ecom_img/chatbox_upper_cut.svg">
+                                </div>
+                                <div class="chatbox_index">
+                                    <h1>Play Somthing Unique</h1>
+                                </div>
                             </div>
                         </div>
                         <div class="container_2_chatbox_check_text_3">
-                            <div class="chatbox_index_img">
-                                <img src="ecom_img/chatbox_upper_cut.svg">
-                            </div>
-                            <div class="chatbox_index">
+                            <div class="chatbox_index_main_box">
+                                <div class="chatbox_index_img">
+                                    <img src="ecom_img/chatbox_upper_cut.svg">
+                                </div>
+                                <div class="chatbox_index">
 
-                                <h1>Imagine you are lake!</h1>
+                                    <h1>Imagine you are lake!</h1>
+                                </div>
                             </div>
                         </div>
                         <div class="container_2_chatbox_check_text_4">
-                            <div class="chatbox_index_img">
-                                <img src="ecom_img/chatbox_upper_cut.svg">
-                            </div>
-                            <div class="chatbox_index">
-                                <h1>Set Lights on warm mode.</h1>
+                            <div class="chatbox_index_main_box">
+                                <div class="chatbox_index_img">
+                                    <img src="ecom_img/chatbox_upper_cut.svg">
+                                </div>
+                                <div class="chatbox_index">
+                                    <h1>Set Lights on warm mode.</h1>
+                                </div>
                             </div>
                         </div>
                         <div class="container_2_chatbox_check_text_5">
-                            <div class="chatbox_index_img">
-                                <img src="ecom_img/chatbox_upper_cut.svg">
-                            </div>
-                            <div class="chatbox_index">
-                                <h1>Discribe, who on the door!</h1>
+                            <div class="chatbox_index_main_box">
+                                <div class="chatbox_index_img">
+                                    <img src="ecom_img/chatbox_upper_cut.svg">
+                                </div>
+                                <div class="chatbox_index">
+                                    <h1>Discribe, who on the door!</h1>
+                                </div>
                             </div>
                         </div>
                         <div class="container_2_chatbox_check_text_6">
-                            <div class="chatbox_index_img">
-                                <img src="ecom_img/chatbox_upper_cut.svg">
-                            </div>
-                            <div class="chatbox_index">
-                                <h1>Were is alex?</h1>
+                            <div class="chatbox_index_main_box">
+                                <div class="chatbox_index_img">
+                                    <img src="ecom_img/chatbox_upper_cut.svg">
+                                </div>
+                                <div class="chatbox_index">
+                                    <h1>Were is alex?</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -277,7 +292,7 @@
                                 <img src="ecom_img/my_prodouct_6_index.png">
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
