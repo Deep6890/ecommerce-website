@@ -319,7 +319,7 @@
 					<h1 class="contaier_2_toogle_text">
 						Click on the button
 					</h1>
-					<button class="toggle_button" id="container_2_toggle_button" onclick="toggleCardFlip()">Click
+					<button class="toggle_button" id="container_2_toggle_button" onclick="my_card_toggle(),my_card_two()">Click
 						!</button>
 				</div>
 			</div>
@@ -3119,14 +3119,17 @@
 	<script>
 		$('.slink_container').slick();
 	</script>
-	<script>function toggleCardFlip() {
+	<script>
 
-			this.classList.toggle("flipped");
-
-		}
-
-		// Call the function to set up the event listener
-		toggleCardFlip();
+	function my_card_toggle()
+	{
+		const card_id = document.querySelector('.card');
+		card_id.classList.toggle('main_card_toggle'); 
+	}
+	function my_card_two(){
+		const card_id_2 = document.querySelector(".card_inner");
+		card_id_2.classList.toggle('main_card_toggle_2');
+	}
 
 	</script>
 	<script src="ecom_js/ecom_partner.js"></script>
