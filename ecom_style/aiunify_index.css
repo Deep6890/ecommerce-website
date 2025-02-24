@@ -929,7 +929,7 @@ section {
     background-color: #DEE2E6;
     height: 900px;
     color: #0b0b0b;
-    font-size: 45px;
+    font-size: 30px;
     width: 100%;
     max-width: 1920px;
     position: relative;
@@ -938,11 +938,11 @@ section {
 
 @keyframes container_3_key {
     from {
-        font-size: 45px;
+        font-size: 28px;
     }
 
     to {
-        font-size: 48px;
+        font-size: 30px;
     }
 }
 
