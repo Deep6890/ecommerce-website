@@ -1018,6 +1018,8 @@ section {
 }
 
 .index_aiunify_info_content {
+    display:flex;
+    flex-direction:column;
     padding-left: 100px;
     font-size: 18px;
     word-spacing: 5px;
