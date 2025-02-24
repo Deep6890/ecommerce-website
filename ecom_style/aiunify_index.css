@@ -424,6 +424,21 @@ section {
         font-size: 8px;
     }
 }
+@media(max-width:900px)
+{
+    .container_1_sign_inner{
+        display: none !important;
+    }
+    form{
+        max-width: 768px !important;
+    }
+    .container_1_main_sign{
+        max-width: 768px;
+    }
+    .sign_in_form_main_container{
+        height: 700px !important;
+    }
+}
 /***************************************Main Container_1 Css Starts**************************************************/
 .container_1 {
     display: flex;
@@ -1487,6 +1502,22 @@ section {
     fill: aliceblue;
 }
 
+@media (max-width:768px)
+{
+.container_1_header_card{
+    font-size: 9px !important;
+}
+@keyframes container_1_header_key {
+    0% {
+        font-size: 7px;
+    }
+
+    100% {
+        font-size: 9px;
+    }
+}
+}
+
 /****************************************************Responsive Container One***********************************************************/
 
 @media(max-width:768px) {
@@ -1521,7 +1552,7 @@ section {
     }
 
     svg {
-        max-width: 100px;
+        max-width: 300px;
     }
 }
 
@@ -1837,7 +1868,12 @@ div:has(.index_slink_img_back) {
     justify-content: center;
     margin-bottom: 150px;
 }
-
+@media (max-width:768px)
+{
+    .main_owl_cont_video{
+        margin-bottom: 25px;
+    }
+}
 /*****************************************************************Container_2 cSS sTART**********************************************************/
 .container_2_card_main {
     display: flex;
