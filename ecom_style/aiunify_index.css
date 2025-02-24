@@ -200,7 +200,7 @@ section {
 
 .header_nav_right {
     display: flex;
-    width: 60%;
+    width:100%;
     justify-content: flex-end;
     font-size: 20px;
     font-family: Bahnschrift Light;
